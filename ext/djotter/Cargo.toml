@@ -1,0 +1,13 @@
+[package]
+name = "djotter"
+version = "0.1.0"
+edition = "2021"
+authors = ["gustavodiasag <gustavodias.aguiar1@gmail.com>"]
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+magnus = { version = "0.6.2" }
+jotdown = { version = "0.8.0" }

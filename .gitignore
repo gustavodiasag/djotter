@@ -1,0 +1,34 @@
+*.so
+*.rbc
+*.bundle
+/.bundle
+/.config
+/coverage/
+/.idea
+/.ruby-lsp
+/InstalledFiles
+/pkg/
+/spec/reports/
+/test/version_tmp/
+tmp/
+/vendor/gems
+/vendor/cache
+*.lock
+*.log
+ports/
+target/
+/gems/
+
+# Documentation cache and generated files:
+/.yardoc/
+/_yardoc/
+/docs/
+/rdoc/
+
+# Environment normalisation:
+/lib/bundler/man/
+
+.ruby-version
+.ruby-gemset
+
+*.orig

@@ -1,0 +1,3 @@
+[workspace]
+members = ["./ext/djotter"]
+resolver = "2"

@@ -30,6 +30,18 @@ Or install it yourself as:
 
 This gem expects to receive UTF-8 strings. Ensure your strings are the right encoding before passing them into `Djotter`.
 
+### Converting to HTML
+
+Call `to_html` on a string to convert it to HTML:
+
+```ruby
+require 'djotter'
+
+puts Djotter.to_html('a *b{#id key="*"}*')
+
+# <p>a <strong><span id="id" key="*">b</span></strong></p>
+```
+
 ### Correctness
 
 Even though the underlying implementation supports all the current features of the Djot syntax, the authors explicitly state that:
@@ -44,24 +56,14 @@ Some of those are actually pointed out by the crate author, such as [issue #51][
 [test-cases]: ./spec/cases/
 [issue-51]: https://github.com/hellux/jotdown/issues/51
 
-### Converting to HTML
-
-Call `to_html` on a string to convert it to HTML:
-
-```ruby
-require 'djotter'
-
-puts Djotter.to_html('a *b{#id key="*"}*')
-
-# <p>a <strong><span id="id" key="*">b</span></strong></p>
-```
-
 ## Development
 
 After cloning the repo:
 
     $ bundle install
     $ bundle exec rake compile
+
+If there were no errors, that's it! Otherwise, make sure you have all the tools required for both Ruby and Rust: `bundle`, `cargo`.
 
 ## Contributing
 

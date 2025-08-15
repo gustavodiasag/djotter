@@ -1,6 +1,7 @@
 # Djotter
 
 [![ci](https://github.com/gustavodiasag/djotter/actions/workflows/ci.yml/badge.svg)](https://github.com/gustavodiasag/djotter/actions/workflows/ci.yml)
+[![Gem Version](https://badge.fury.io/rb/djotter.svg)](https://badge.fury.io/rb/djotter)
 
 Ruby wrapper for Rust's [jotdown][djot-rs] crate.
 

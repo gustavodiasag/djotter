@@ -16,7 +16,6 @@ jobs:
           - windows-latest
         ruby-version:
           - 3.4
-          - ruby-head
 
     steps:
       - uses: actions/checkout@v5
